@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    android:textDirection="ltr"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="5dp"
+    card_view:cardBackgroundColor="#4286f4">
+<LinearLayout
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="66dp"
+    android:id="@+id/suratsClick"
+    android:padding="5dp"
+    android:layout_margin="1dp"
+    android:background="#fff"
+    >
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/radio"
+        android:layout_gravity="right"
+        android:layout_weight="0.01" />
+
+    <TextView
+        android:text="اسم السوره"
+        android:layout_width="0dp"
+        android:layout_weight="0.33"
+        android:layout_height="wrap_content"
+        android:id="@+id/suratTextName"
+        android:gravity="left"
+        android:layout_gravity="center"
+        android:layout_marginLeft="17dp"
+        android:textStyle="bold"
+        android:textColor="#4286f4"
+        />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/download"
+        android:id="@+id/download"
+        android:layout_gravity="right"
+        />
+
+</LinearLayout>
+</android.support.v7.widget.CardView>

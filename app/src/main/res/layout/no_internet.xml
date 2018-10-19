@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="15dp"
+    android:weightSum="1">
+
+    <TextView
+        android:text="There is no internet connection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#4286f4"
+        android:gravity="center"
+        android:textDirection="rtl"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:text="make sure your connection and please tyr again"
+        android:layout_width="match_parent"
+        android:textColor="#4286f4"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="0.10" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:text="Main Page"
+        android:background="#4286f4"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:id="@+id/backToHome"/>
+</LinearLayout>

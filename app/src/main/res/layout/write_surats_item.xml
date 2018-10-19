@@ -1,0 +1,43 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="5dp"
+    card_view:cardBackgroundColor="#4286f4"
+    android:layoutDirection="ltr"
+    android:textDirection="ltr">
+<LinearLayout
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:id="@+id/suratsWriteClick"
+
+    android:padding="5dp"
+    android:layout_margin="1dp"
+    android:background="#fff">
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/qq"
+        android:layout_gravity="right"
+        />
+
+    <TextView
+        android:text="اسم السوره"
+        android:layout_width="0dp"
+        android:layout_weight="0.28"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/suratsWriteName"
+        android:gravity="left"
+        android:layout_gravity="center"
+        android:layout_marginRight="10dp"
+        android:textStyle="bold"
+        android:textColor="#4286f4"
+        />
+
+
+</LinearLayout>
+</android.support.v7.widget.CardView>

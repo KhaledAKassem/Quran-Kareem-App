@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/content_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:layoutDirection="rtl"
+        android:orientation="vertical"
+        android:tag="test"
+        android:textDirection="rtl">
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="#0056e0"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<com.github.florent37.diagonallayout.DiagonalLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:elevation="10dp"-->
+        <!--app:diagonal_angle="0"-->
+        <!--app:diagonal_position="bottom"-->
+        <!--app:diagonal_direction="right">-->
+
+
+        <!--<com.flaviofaria.kenburnsview.KenBurnsView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--android:src="@drawable/header"-->
+        <!--/>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4286f4"
+            android:orientation="horizontal">
+
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:text="القران الكريم"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="30sp"-->
+            <!--android:textStyle="bold" />-->
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/qw">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg_rounded_corners"
+                android:gravity="right|top"
+                android:onClick="closeapp"
+                android:padding="15dp"
+                android:text="Log out " />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:src="@drawable/qurana"
+                app:civ_border_color="#cceccc"
+                app:civ_border_width="1dp"
+                app:civ_fill_color="@color/colorPrimary" />
+
+
+        </RelativeLayout>
+
+        <!--</com.github.florent37.diagonallayout.DiagonalLayout>-->
+
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#cceccc"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="0.99"
+                android:background="#fff"
+                android:drawableTop="@drawable/listen"
+                android:gravity="center_vertical|center_horizontal"
+                android:onClick="btnQuranHear"
+                android:paddingTop="5dp"
+                android:text="Listen Quran"
+                android:textColor="#08B455"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="0.99"
+                android:background="#fff"
+                android:drawableTop="@drawable/bbbb"
+                android:gravity="center_vertical|center_horizontal"
+                android:onClick="marker"
+                android:paddingTop="5dp"
+                android:text="Marker"
+                android:textColor="#08B455"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#cceccc"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:drawableTop="@drawable/qws"
+                android:gravity="center_vertical|center_horizontal"
+                android:onClick="btnQuranRead"
+                android:paddingTop="5dp"
+                android:text="Read Quran By name of Surah"
+                android:textColor="#08B455"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:drawableTop="@drawable/op"
+                android:gravity="center_vertical|center_horizontal"
+                android:onClick="juz"
+                android:paddingTop="5dp"
+                android:text="Read by Juz in quran kareem"
+                android:textColor="#08B455"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#cceccc"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:drawableTop="@drawable/qwi"
+                android:gravity="center_vertical|center_horizontal"
+                android:onClick="explainationClick"
+                android:paddingTop="5dp"
+                android:text="Explaination in Quran"
+                android:textColor="#08B455"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:drawableTop="@drawable/qaz"
+                android:gravity="center_vertical|center_horizontal"
+                android:onClick="btnAzkar"
+                android:paddingTop="5dp"
+                android:text="Doaa From Quran"
+                android:textColor="#08B455"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
